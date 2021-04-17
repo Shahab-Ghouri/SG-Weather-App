@@ -1,0 +1,103 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(-45deg,#020202, rgb(42, 6, 173),red);
+    background-size: 400% 400%;
+    position: relative;
+    color: #fff;
+    animation: animator 4s ease-in infinite;
+    -webkit-animation: animator 4s ease-in infinite;
+}
+.container{
+    max-width: 600px;
+    border: 1px solid rgba(216, 205, 205, 0.74);
+    background-image: url(./images/mountains.jpg) ;
+    background-size: cover;
+    /* height: 80vh; */
+    box-shadow: 8px 10px 10px #0e0d0d79;
+}
+h1{
+    font-size: 30px;
+    letter-spacing: 3px;
+    word-spacing: 10px;
+    font-family: 'Libre Baskerville', serif;
+    border-bottom: 1px solid #fff;
+    border-top: 1px solid #fff;
+    padding: 20px 0;
+}
+.form-floating{
+    margin: 0 60px;
+    color: rgb(8, 8, 8);
+    font-weight: 400;
+}
+
+#city{
+   border-radius: 20px 0 20px 0;
+   -webkit-border-radius: 20px 0 20px 0;
+   -moz-border-radius: 20px 0 20px 0;
+   -ms-border-radius: 20px 0 20px 0;
+   -o-border-radius: 20px 0 20px 0;
+   border-bottom: 4px solid rgb(230, 145, 19);
+}
+.details{
+    margin: 5rem 0;
+}
+h5{
+    font-size: 25px;
+    font-family: 'Libre Baskerville', serif;
+}
+.date{
+    font-size: 20px;
+}
+.temp,.feels-like,.humidity{
+    font-family: 'Orbitron', sans-serif;
+}
+.weather{
+    margin: 3rem 0 0 0;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-weight: bolder;
+}
+
+
+
+.flex-box-container{
+    display: flex;
+    flex-direction: column;
+
+}
+.humidity{
+    margin-top: 2rem;
+    font-size: 70%;
+}
+.humidity p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+}
+.image-container{
+    margin: 2.5rem 0 0 0;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    background: #202020;
+}
+.image-container img{
+    margin: auto;
+}
+
+@keyframes animator{
+    0%{
+        background-position: 0 50% ;
+    }
+    50%{
+        background-position: 100% 0 ;
+    }
+    100%{
+        background-position: 0 50% ;
+    }
+    
+}

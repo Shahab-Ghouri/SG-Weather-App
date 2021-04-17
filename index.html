@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SG-Weather Application</title>
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+      crossorigin="anonymous"
+    />
+    <link rel="shortcut icon" href="./images/LOGO.jpg" type="image/x-icon">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap"
+      rel="stylesheet"
+    />
+    <!-- css link -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <!-- container is the class from bootstrap  -->
+    <div class="container my-5 mx-auto" id="changing">
+      <!-- heading -->
+      <h1 class="text-center my-5">SG WEATHER APPLICATION</h1>
+      <!-- input box -->
+      <form class="change-location form-floating mb-3">
+        <input
+          type="text"
+          name="city"
+          class="form-control"
+          id="city"
+          placeholder="City"
+        />
+        <label for="city">Search for a City.. </label>
+      </form>
+      <div class="uppercase text-center details">
+        <h5>City Name</h5>
+        <span class="date">Date</span>
+        <div class="display-4 my-5 flex-box-container">
+          <div class="temp">Temp<span>&deg;C</span></div>
+          <div class="image-container card shadow mx-auto">
+            <img src="./images/cloud.svg" alt="">
+          </div>
+          <div class="humidity">%<p>Humidity</p></div>
+        </div>
+        
+        <div class="weather">Weather Condition</div>
+      </div>
+    </div>
+
+    <!-- JS FILES  -->
+    <script src="./Js/forecast.js"></script>
+    <script src="./Js/app.js"></script>
+  </body>
+</html>
